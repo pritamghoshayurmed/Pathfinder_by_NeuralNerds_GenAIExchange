@@ -1,9 +1,13 @@
 import { motion, Variants } from "framer-motion";
-import { Phone, Zap } from "lucide-react";
+import { Phone, Zap, Mic, Pause, Play } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { useState, useRef, useEffect } from "react";
 
 const CallingSection = () => {
   const { t } = useTranslation();
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  const [error, setError] = useState("");
 
   const containerVariants: Variants = {
     hidden: { opacity: 0 },
@@ -23,9 +27,66 @@ const CallingSection = () => {
       y: 0,
       transition: {
         duration: 0.6,
-        ease: [0.43, 0.13, 0.23, 0.96], // Cubic bezier array instead of string
+        ease: [0.43, 0.13, 0.23, 0.96],
       },
     },
+  };
+
+  // Initialize audio
+  useEffect(() => {
+    audioRef.current = new Audio('/audio.dat.unknown');
+    
+    // Add event listeners
+    const audio = audioRef.current;
+    
+    const handleEnded = () => {
+      setIsPlaying(false);
+    };
+
+    const handleError = () => {
+      setError("Failed to load audio. Please check if the file exists.");
+      setIsPlaying(false);
+    };
+
+    audio.addEventListener('ended', handleEnded);
+    audio.addEventListener('error', handleError);
+
+    // Cleanup
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.removeEventListener('ended', handleEnded);
+        audioRef.current.removeEventListener('error', handleError);
+      }
+    };
+  }, []);
+
+  const handleDemoCall = (e: React.MouseEvent<HTMLButtonElement>) => {
+    e.preventDefault();
+    setError("");
+
+    if (!audioRef.current) {
+      setError("Audio not initialized");
+      return;
+    }
+
+    if (isPlaying) {
+      // Pause audio
+      audioRef.current.pause();
+      setIsPlaying(false);
+    } else {
+      // Play audio
+      audioRef.current.currentTime = 0; // Reset to start
+      audioRef.current.play()
+        .then(() => {
+          setIsPlaying(true);
+        })
+        .catch((err) => {
+          console.error("Error playing audio:", err);
+          setError("Failed to play audio. Please try again.");
+          setIsPlaying(false);
+        });
+    }
   };
 
   return (
@@ -119,18 +180,84 @@ const CallingSection = () => {
             </div>
           </motion.div>
 
-          {/* CTA Button */}
-          <motion.div variants={itemVariants} className="pt-4">
-            <a
-              href={`tel:${t("calling.phoneNumber")}`}
-              className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-xl font-semibold text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
+          {/* Error Message */}
+          {error && (
+            <motion.div
+              initial={{ opacity: 0, y: -10 }}
+              animate={{ opacity: 1, y: 0 }}
+              className="flex justify-center"
             >
-              <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
-              {t("calling.button")}
-              <span className="text-xs bg-white/20 px-2 py-1 rounded-full">
-                {t("calling.badge")}
-              </span>
-            </a>
+              <div className="px-4 py-2 bg-red-500/10 border border-red-500/30 rounded-lg text-red-400 text-sm">
+                {error}
+              </div>
+            </motion.div>
+          )}
+
+          {/* CTA Buttons */}
+          <motion.div variants={itemVariants} className="pt-4">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              {/* Call Now Button */}
+              <a
+                href={`tel:${t("calling.phoneNumber")}`}
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 rounded-xl font-semibold text-white shadow-lg shadow-purple-500/30 hover:shadow-purple-500/50 transition-all duration-300 hover:scale-105"
+              >
+                <Phone className="w-5 h-5 group-hover:rotate-12 transition-transform duration-300" />
+                {t("calling.button")}
+                <span className="text-xs bg-white/20 px-2 py-1 rounded-full">
+                  {t("calling.badge")}
+                </span>
+              </a>
+
+              {/* Demo Voice Call Button */}
+              <button
+                onClick={handleDemoCall}
+                className="group inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 rounded-xl font-semibold text-white shadow-lg shadow-indigo-500/30 hover:shadow-indigo-500/50 transition-all duration-300 hover:scale-105 border border-indigo-400/20 relative overflow-hidden"
+              >
+                {/* Animated background when playing */}
+                {isPlaying && (
+                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-400/20 to-blue-400/20 animate-pulse" />
+                )}
+                
+                <div className="relative flex items-center gap-3">
+                  {isPlaying ? (
+                    <Pause className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  ) : (
+                    <Mic className="w-5 h-5 group-hover:scale-110 transition-transform duration-300" />
+                  )}
+                  {isPlaying ? "Pause Demo" : "Demo Voice Call"}
+                  <span className="text-xs bg-white/20 px-2 py-1 rounded-full">
+                    {isPlaying ? (
+                      <span className="flex items-center gap-1">
+                        <span className="w-1.5 h-1.5 bg-green-400 rounded-full animate-pulse" />
+                        Playing
+                      </span>
+                    ) : (
+                      "Try Now"
+                    )}
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            {/* Playing Indicator */}
+            {isPlaying && (
+              <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="mt-4 flex justify-center"
+              >
+                <div className="inline-flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/30 rounded-full backdrop-blur-sm">
+                  <div className="flex gap-1">
+                    <div className="w-1 h-4 bg-indigo-400 rounded-full animate-pulse" style={{ animationDelay: '0ms' }} />
+                    <div className="w-1 h-4 bg-indigo-400 rounded-full animate-pulse" style={{ animationDelay: '150ms' }} />
+                    <div className="w-1 h-4 bg-indigo-400 rounded-full animate-pulse" style={{ animationDelay: '300ms' }} />
+                  </div>
+                  <span className="text-sm text-indigo-300 font-medium">
+                    Demo call in progress...
+                  </span>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
         </div>
       </motion.div>
