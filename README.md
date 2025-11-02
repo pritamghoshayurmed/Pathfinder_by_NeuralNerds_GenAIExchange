@@ -280,7 +280,7 @@ python agent.py start
 
 | Name | Role | Repository | Email |
 |------|------|-----------|-------|
-|Pritam Ghosh|GenAI and Conversational AI Developer|All Repositories(Pathfinder_frontend{skill development dashboard(Placement Kit,interview rounds,Trending skills)}) |gpritam414@gmail.com|
+|Pritam Ghosh|Data Science(Gen AI, AI Agent Developer)|All Repositories(Pathfinder_frontend{skill development dashboard(Placement Kit,interview rounds,Trending skills)}) |gpritam414@gmail.com|
 |Ankit Rajak|Database Administrator and Full Stack Developer|PathfinderAI(Skill Development & Decision Making Dashboard)|ankit12rajak@gmail.com|
 |Koushik Das|Full Stack Developer|PathfinderAi(College Admission Dashboard)|koushikkd07@gmail.com|
 |Nabin Bera|Full Stack & Devops Engineer|PathfinderAI(Early Stage Dashboard)|nabinbera999@gmail.com|
