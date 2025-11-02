@@ -33,19 +33,24 @@ jobs:
       - name: Generate contribution chart
         env:
           GITHUB_TOKEN: ${{ secrets.SECRET_GITHUB_TOKEN }}
+          TARGET_REPO: ${{ github.event.inputs.target_repo || 'pritamghoshayurmed/pathfinderAi' }}
         run: |
           mkdir -p assets
+          # convert owner/repo -> owner-repo for filename
+          SAFE_TARGET="${TARGET_REPO//\//-}"
           python3 scripts/generate_contrib_chart.py \
-            --target-repo "${{ github.event.inputs.target_repo || 'pritamghoshayurmed/pathfinderAi' }}" \
-            --out "assets/contrib-${{ github.event.inputs.target_repo || 'pritamghoshayurmed/pathfinderAi' | replace('/','-') }}.svg"
+            --target-repo "${TARGET_REPO}" \
+            --out "assets/contrib-${SAFE_TARGET}.svg"
 
       - name: Commit and push chart (if changed)
+        env:
+          TARGET_REPO: ${{ github.event.inputs.target_repo || 'pritamghoshayurmed/pathfinderAi' }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets || true
           if ! git diff --cached --quiet; then
-            git commit -m "chore: update contribution graph for ${{ github.event.inputs.target_repo || 'pritamghoshayurmed/pathfinderAi' }}"
+            git commit -m "chore: update contribution graph for ${TARGET_REPO}"
             git push
           else
             echo "No changes to commit"
