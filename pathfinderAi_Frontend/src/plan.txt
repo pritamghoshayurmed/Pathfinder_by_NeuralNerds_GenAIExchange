@@ -1,0 +1,72 @@
+✅ 1.Create a new service: geminiCodingQuestionService.ts
+✅ Generate 2 coding questions dynamically based on role, company, and position level
+✅ Include problem statement, examples, constraints, test cases
+✅ Generate starter code templates for multiple languages (JS, Python, TS, Java, C++)
+✅ Include expected time/space complexity
+✅ Include hints and multiple approaches
+✅ Include fallback questions if API fails
+
+✅ 2.Enhance geminiCodeService.ts
+✅ Add time/space complexity analysis
+✅ Add test case validation with detailed results
+✅ Add comparison with optimal solution
+✅ Enhanced analysis with complexity explanations
+
+✅ 3.Update MachineCoding.tsx
+✅ Fetch dynamic questions on component mount
+✅ Display 2 questions with navigation between them (Previous/Next buttons)
+✅ Show time/space complexity analysis in results
+✅ Add test case execution and validation
+✅ Show loading state while fetching questions
+✅ Display hints progressively
+✅ Show question counter (Question 1 of 2)
+✅ Enhanced UI with complexity comparison cards
+✅ Test case results visualization
+
+==========================================
+NEXT PHASE: SANDBOX CODE EXECUTION
+==========================================
+
+🎯 OBJECTIVE: Implement real code execution for all languages (JavaScript, Python, TypeScript, Java, C++)
+
+📋 IMPLEMENTATION PLAN: See SANDBOX_EXECUTION_IMPLEMENTATION.md
+
+⏰ PHASE 1: Judge0 API Integration (6 days)
+⏳ Day 1: Set up Judge0 API account & credentials
+⏳ Day 2: Create codeExecutionService.ts
+⏳ Day 3: Create hybridCodeAnalysisService.ts (Real execution + AI analysis)
+⏳ Day 4: Update MachineCoding.tsx with new execution handler
+⏳ Day 5: Test all 5 languages + edge cases
+⏳ Day 6: Security hardening + deployment
+
+🚀 PHASE 2: Google Cloud Run (Optional - Production Scale)
+🔮 Week 1: Docker container setup for each language
+🔮 Week 2: Cloud Run deployment + API gateway
+
+💰 COST ESTIMATION:
+   - Judge0 RapidAPI: $10/month (10K requests)
+   - Google Cloud Run: ~$0.40 per million requests
+
+🔒 SECURITY REQUIREMENTS:
+   ✓ CPU time limit: 2-5 seconds
+   ✓ Memory limit: 128-256 MB
+   ✓ No network access
+   ✓ Input validation & rate limiting
+
+📊 SUCCESS CRITERIA:
+   ✓ Real execution for all 5 languages
+   ✓ < 3 seconds total execution time
+   ✓ 100% test case validation accuracy
+   ✓ Combined AI analysis + real output
+
+==========================================
+
+****Google Cloud Storage Options for Questions & Answers****
+Recommended: Firestore (Best for this use case)
+Type: NoSQL document database
+Why:
+Real-time sync capabilities
+Easy querying by role/company/level
+Built-in indexing
+Excellent for structured data like questions
+Free tier: 1GB storage, 50K reads/day

@@ -1,0 +1,284 @@
+{
+  "navbar": {
+    "logo": "PathFinderAI",
+    "home": "Home",
+    "features": "Features",
+    "categories": "Categories",
+    "about": "About",
+    "dashboards": "Dashboards",
+    "signIn": "Sign In",
+    "getStarted": "Get Started",
+    "dashboard": {
+      "class8to10": "Class 8-10",
+      "class11to12": "Class 11-12",
+      "post12th": "Post-12th",
+      "college": "College"
+    },
+    "category": {
+      "awareness": "Awareness",
+      "preparation": "Preparation",
+      "admission": "Admission",
+      "development": "Development"
+    }
+  },
+  "hero": {
+    "badge": "AI-Powered Career Guidance",
+    "heading": {
+      "line1": "Navigate Your",
+      "line2": "Future Career",
+      "line3": "with AI Precision"
+    },
+    "description": "Personalized career guidance powered by advanced AI. Discover your strengths, explore career paths, and develop the skills needed for tomorrow's job market.",
+    "buttons": {
+      "startJourney": "Start Your Journey",
+      "watchDemo": "Watch Demo"
+    },
+    "stats": {
+      "studentsGuided": "Students Guided",
+      "successRate": "Success Rate",
+      "careerPaths": "Career Paths"
+    },
+    "floatingCards": {
+      "aiActive": "AI Active",
+      "careerMatch": "Career Match",
+      "accuracy": "Accuracy"
+    },
+    "modal": {
+      "title": "PathFinder AI Demo",
+      "description": "Discover how AI guides your career journey",
+      "footer": "Ready to start your journey?",
+      "getStarted": "Get Started Now"
+    },
+    "imageAlt": "AI Career Guidance Platform"
+  },
+  "features": {
+    "badge": "Powerful Features",
+    "heading": {
+      "line1": "Everything You Need for",
+      "line2": "Career Success"
+    },
+    "description": "Our comprehensive platform combines cutting-edge AI with expert career guidance to provide personalized recommendations for every stage of your journey.",
+    "main": {
+      "aiAssessment": {
+        "title": "AI-Powered Assessment",
+        "description": "Advanced algorithms analyze your skills, interests, and personality to provide personalized recommendations."
+      },
+      "careerMapping": {
+        "title": "Career Path Mapping",
+        "description": "Visualize clear roadmaps for different career paths with required skills and milestones."
+      },
+      "marketIntelligence": {
+        "title": "Market Intelligence",
+        "description": "Real-time insights into job market trends, salary expectations, and emerging opportunities."
+      },
+      "skillDevelopment": {
+        "title": "Skill Development",
+        "description": "Curated learning paths and resources to build the skills you need for your chosen career."
+      }
+    },
+    "categorySection": {
+      "badge": "Tailored for Every Student",
+      "heading": {
+        "line1": "Specialized Features by",
+        "line2": "Student Category"
+      }
+    },
+    "categories": {
+      "class8to10": {
+        "title": "Class 8-10",
+        "subtitle": "Awareness & Discovery",
+        "features": {
+          "aptitudeTests": "Aptitude tests & personality quizzes",
+          "careerAwareness": "Career awareness modules",
+          "skillStarter": "Skill starter packs",
+          "stressManagement": "Stress management guides",
+          "gamifiedLearning": "Gamified learning challenges"
+        }
+      },
+      "class11to12": {
+        "title": "Class 11-12",
+        "subtitle": "Decision Making",
+        "features": {
+          "pathwayExplorer": "Career pathway explorer",
+          "examPrep": "Competitive exam prep roadmap",
+          "alternativeOptions": "Alternative career options",
+          "collegeInsights": "College & branch insights",
+          "peerInteraction": "Peer & mentor interaction"
+        }
+      },
+      "post12th": {
+        "title": "Post-12th",
+        "subtitle": "College Admission",
+        "features": {
+          "collegeTool": "College comparison tool",
+          "matchmaker": "Career vs Interest matchmaker",
+          "roiCalculator": "ROI calculator",
+          "simulator": "What If simulator",
+          "scholarshipGuides": "Scholarship & funding guides"
+        }
+      },
+      "college": {
+        "title": "College Students",
+        "subtitle": "Skill Development",
+        "features": {
+          "gapAnalyzer": "Skill gap analyzer",
+          "learningPaths": "Personalized learning paths",
+          "trendsDashboard": "Industry trends dashboard",
+          "internships": "Internship opportunities",
+          "placementKit": "Placement readiness kit"
+        }
+      }
+    }
+  },
+  "categoriesSection": {
+    "badge": "Student Categories",
+    "heading": {
+      "line1": "Designed for Every",
+      "line2": "Stage of Your Journey"
+    },
+    "description": "Each student category has unique needs and challenges. Our platform provides specialized features and guidance tailored to your current academic stage.",
+    "keyFeatures": "Key Features:",
+    "getStarted": "Get Started",
+    "readyToStart": {
+      "title": "Ready to Start?",
+      "description": "Join thousands of students who have successfully navigated their career journey with our platform."
+    },
+    "stats": {
+      "students": "Students",
+      "satisfaction": "Satisfaction",
+      "dailyUse": "Daily Use"
+    },
+    "items": {
+      "earlyStage": {
+        "title": "Class 8-10",
+        "subtitle": "Early Stage / Awareness Phase",
+        "description": "Focus on exposure, self-discovery, and reducing academic stress while exploring various career fields.",
+        "keyPoints": {
+          "point1": "Discover your natural strengths and interests",
+          "point2": "Learn about different career fields in engaging ways",
+          "point3": "Build foundational skills through interactive activities",
+          "point4": "Develop healthy study habits and stress management"
+        },
+        "stats": {
+          "students": "2.5M+",
+          "satisfaction": "94%",
+          "timeSpent": "30 min/day"
+        }
+      },
+      "decisionMaking": {
+        "title": "Class 11-12",
+        "subtitle": "Decision-Making / Competitive Exams",
+        "description": "Navigate career decisions, prepare for competitive exams, and explore multiple pathways to success.",
+        "keyPoints": {
+          "point1": "Get clear guidance on career pathways and requirements",
+          "point2": "Smart strategies for competitive exam preparation",
+          "point3": "Explore alternative career options beyond traditional paths",
+          "point4": "Connect with mentors and successful seniors"
+        },
+        "stats": {
+          "students": "1.8M+",
+          "satisfaction": "96%",
+          "timeSpent": "45 min/day"
+        }
+      },
+      "collegeAdmission": {
+        "title": "Post-12th Students",
+        "subtitle": "College Admission Stage",
+        "description": "Make informed decisions about college selection, course choices, and evaluate return on investment.",
+        "keyPoints": {
+          "point1": "Compare colleges based on placements, fees, and opportunities",
+          "point2": "Match your interests with the right courses and specializations",
+          "point3": "Calculate ROI for different education paths",
+          "point4": "Access scholarship and funding opportunities"
+        },
+        "stats": {
+          "students": "950K+",
+          "satisfaction": "97%",
+          "timeSpent": "60 min/day"
+        }
+      },
+      "skillDevelopment": {
+        "title": "College Students",
+        "subtitle": "Skill Development / Employability Stage",
+        "description": "Bridge the gap between academic learning and industry requirements with targeted skill development.",
+        "keyPoints": {
+          "point1": "Identify and fill critical skill gaps for your career goals",
+          "point2": "Follow AI-curated learning paths for in-demand skills",
+          "point3": "Stay updated with latest industry trends and requirements",
+          "point4": "Get placement-ready with resume building and interview prep"
+        },
+        "stats": {
+          "students": "1.2M+",
+          "satisfaction": "95%",
+          "timeSpent": "90 min/day"
+        }
+      }
+    }
+  },
+  "calling": {
+    "badge": "AI-Powered",
+    "availability": "Available 24/7",
+    "mainHeading": "Free AI-Powered",
+    "highlightedText": "CALLING AGENT",
+    "description": "Our AI-powered calling agent is available 24/7 to assist you with your queries and provide expert guidance on your career journey.",
+    "phoneLabel": "Call Us Now",
+    "phoneNumber": "+13205372177",
+    "ctaText": "Get instant assistance with your career queries and guidance from our AI-powered agent.",
+    "button": "Call Now"
+  },
+  "footer": {
+    "brand": {
+      "name": "PathfinderAI",
+      "description": "Empowering Indian students with AI-driven career guidance, personalized learning paths, and comprehensive skill development for the evolving job market.",
+      "contact": {
+        "email": "support@pathfinderai.com",
+        "phone": "+91 80XX-XX-XXXX",
+        "location": "Bangalore, India"
+      }
+    },
+    "sections": {
+      "product": {
+        "title": "Product",
+        "links": {
+          "features": "Features",
+          "categories": "Categories",
+          "pricing": "Pricing",
+          "roadmap": "Roadmap"
+        }
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "links": {
+          "class8to10": "Class 8-10",
+          "class11to12": "Class 11-12",
+          "post12th": "Post-12th",
+          "collegeStudents": "College Students"
+        }
+      },
+      "support": {
+        "title": "Support",
+        "links": {
+          "helpCenter": "Help Center",
+          "contactUs": "Contact Us",
+          "faq": "FAQ",
+          "privacyPolicy": "Privacy Policy"
+        }
+      },
+      "company": {
+        "title": "Company",
+        "links": {
+          "aboutUs": "About Us",
+          "careers": "Careers",
+          "blog": "Blog",
+          "press": "Press"
+        }
+      }
+    },
+    "copyright": "© {{year}} PathfinderAI. All rights reserved.",
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  }
+}

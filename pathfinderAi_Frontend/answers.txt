@@ -1,0 +1,63 @@
+
+
+1. What tools power the app, server, and database?
+Our platform is engineered with a high-performance, scalable, and intelligent architecture designed to deliver a seamless real-time learning experience.
+
+Frontend Application:
+
+Framework: A highly interactive Single-Page Application (SPA) built with React and TypeScript.
+Build Tool: Vite for its exceptionally fast Hot Module Replacement (HMR) and optimized production builds.
+Styling: Tailwind CSS for a utility-first, design-system-oriented approach to UI development, ensuring consistency and rapid prototyping.
+Core Components: We integrate the Monaco Editor (the engine behind VS Code) for our CodeEditorNotebook and ResumeEditor components, providing users with a feature-rich and familiar coding environment.
+Real-time Infrastructure:
+
+Collaborative Sessions: LiveKit serves as the backbone for our real-time voice, video, and data channels. This powers the live interactions between users and our AI agents during mock interviews and collaborative system design sessions.
+Telephony Integration: We leverage Twilio to bridge our AI agents with the public telephone network, allowing users to practice interviews via a standard phone call for a more realistic experience.
+Backend Services & AI Orchestration:
+
+API Layer: A primary Node.js server using Express.js manages user authentication, session management, and serves as the main gateway for client requests.
+AI Core: The brain of our operation is a suite of Python microservices. These services host our specialized Behavioral and Technical AI agents, manage the RAG pipeline, and orchestrate complex learning workflows.
+Code Execution Sandbox: We utilize the Piston API to provide a secure, multi-language execution environment. This allows us to safely run and evaluate user-submitted code for our machine coding and quiz assessments without compromising our infrastructure.
+Database & Data Persistence:
+
+Primary Datastore: We use Supabase, which provides a robust, enterprise-grade PostgreSQL database. It handles all our core data, including user profiles, learning progress, and assessment results.
+Scalability: Supabase's architecture provides us with auto-scaling, authentication, and real-time data subscriptions out-of-the-box, forming a reliable foundation for our application.
+2. Where do the Google AI tools layer into the product?
+Google AI is not just a feature; it is the foundational intelligence layer woven into every aspect of our Skill Development Dashboard, transforming static content into a dynamic, personalized career co-pilot.
+
+Core Intelligence Engine: Gemini API
+The Gemini family of models, particularly Gemini 1.5 Pro, serves as the central nervous system for our AI-driven features. Its native multimodality, large context window, and advanced reasoning are critical for our platform.
+Explicitly include the Gemini code-execution tool as the authoritative evaluator for machine-coding rounds (testcase execution, time/memory limits, structured verdicts).
+Google YouTube Data API integration to create youtube video player in the trending skills section , parallely coding in the monaco editor while viewing the tutorial 
+Skill Gap Analysis & Career Guidance:
+
+Analysis: When a user defines their TargetRole, our system uses the Gemini API to perform a comprehensive Skill Gap Analysis. It cross-references the user's current skills with industry requirements for that role, generating a personalized LearningPath.
+Guidance: The career guidance chatbot is powered by a fine-tuned Gemini model that acts as a personal career counselor. It leverages Google's Recommendation AI to suggest courses, projects, and skills tailored to the user's long-term goals, ensuring the guidance is adaptive and relevant.
+The Placement Kit:
+This is a six-pronged toolkit designed to make candidates interview-ready, with Google AI embedded in each step:
+
+Resume & Portfolio Optimization: Users import their resume or build a portfolio. Gemini analyzes the content against target job descriptions, providing suggestions for keyword optimization, impact metric framing, and alignment with the STAR method, ensuring ATS-compatibility and recruiter appeal.
+Dynamic Skill Assessment: We use Gemini to generate DynamicQuiz instances on-the-fly, tailored to the user's skill level and target role. This moves beyond static question banks to create a truly adaptive assessment experience.
+Mock Interview Engine: Our interview section simulates four distinct rounds:
+Behavioral: A Gemini-powered agent acts as the interviewer, using Google Speech-to-Text for transcription and Text-to-Speech for realistic voice interaction. The agent is trained to evaluate responses based on emotional tone and adherence to structured answering patterns.
+Technical & DSA: The agent presents coding challenges in the CodeEditorNotebook. Gemini analyzes the user's code in real-time for correctness, efficiency (Big O notation), and code quality, providing instant, actionable feedback.
+System Design: Leveraging Gemini 1.5 Pro's multimodality, the user can draw on the DrawingCanvas. The AI agent interprets these diagrams, asks clarifying questions, and evaluates the scalability and trade-offs of the proposed architecture.
+HR Screening: A specialized agent simulates the initial recruiter call, assessing the candidate's alignment with company culture and role expectations.
+Company & Role Intelligence: We use Vertex AI Search to build a RAG pipeline over a corpus of company career pages, tech blogs, and interview experience reports. This allows users to ask specific questions ("What is the system design focus for a senior role at Google?") and receive synthesized, accurate answers.
+Projected Internship Simulation: This futuristic module uses Gemini to create a simulated 2-week internship. The AI acts as a project manager, assigning tasks, conducting daily stand-ups, performing code reviews, and providing a final performance evaluation. This gives candidates invaluable, near-real-world experience.
+Gamified Progress Tracking: We use AI to power our Gamification and ProgressIntelligence features, setting dynamic goals and rewarding users for consistent effort and milestone achievements, making the learning process engaging.
+Advanced RAG with Vector Search:
+Our entire platform is underpinned by a sophisticated Retrieval-Augmented Generation (RAG) architecture. We use Google's advanced vector embeddings to represent skills, job requirements, and technical concepts. ScaNN (Scalable Nearest Neighbors), Google's high-performance vector similarity search library, allows our RAG pipeline to retrieve the most relevant context for Gemini with ultra-low latency, ensuring our AI's responses are always accurate and grounded in fact.
+
+3. Where is it hosted, and how do you roll out updates?
+Our infrastructure is built on a modern, cloud-native stack that prioritizes performance, security, and continuous delivery.
+
+Hosting Infrastructure:
+
+Frontend: The React application is deployed globally on Vercel, leveraging its Edge Network to ensure minimal latency for users anywhere in the world.
+Backend & AI Services: Our entire backend, including the Node.js API server and Python-based AI microservices, is containerized and deployed on Google Cloud Run. This serverless platform provides automatic scaling, from zero to thousands of instances, ensuring we only pay for what we use while handling unpredictable traffic spikes during peak usage.
+Database: Our Supabase instance runs on dedicated cloud infrastructure, configured for high availability and point-in-time recovery to guarantee data integrity.
+CI/CD & Deployment Strategy:
+
+Automation: We operate a full CI/CD pipeline using GitHub Actions. Every git push to our repository triggers an automated workflow that builds the code, runs a comprehensive test suite (unit, integration, and end-to-end tests), and performs static analysis.
+Rollouts: Upon a successful build on the main branch, the new version is automatically deployed to a staging environment for final validation. We are leveraging Google Cloud Deploy to orchestrate our production rollouts using a canary deployment strategy. This allows us to release new features to a small subset of users first, monitor for any issues, and then gradually roll it out to our entire user base, ensuring near-zero downtime and a stable, reliable service.

@@ -1,0 +1,286 @@
+{
+  "navbar": {
+    "logo": "PathFinderAI",
+    "home": "Inicio",
+    "features": "Características",
+    "categories": "Categorías",
+    "about": "Acerca de",
+    "dashboards": "Paneles",
+    "signIn": "Iniciar Sesión",
+    "getStarted": "Comenzar",
+    "dashboard": {
+      "class8to10": "Clase 8-10",
+      "class11to12": "Clase 11-12",
+      "post12th": "Post-12º",
+      "college": "Universidad"
+    },
+    "category": {
+      "awareness": "Conciencia",
+      "preparation": "Preparación",
+      "admission": "Admisión",
+      "development": "Desarrollo"
+    }
+  },
+  "hero": {
+    "badge": "Orientación Profesional con IA",
+    "heading": {
+      "line1": "Navega Tu",
+      "line2": "Carrera Futura",
+      "line3": "con Precisión de IA"
+    },
+    "description": "Orientación profesional personalizada impulsada por IA avanzada. Descubre tus fortalezas, explora trayectorias profesionales y desarrolla las habilidades necesarias para el mercado laboral del mañana.",
+    "buttons": {
+      "startJourney": "Comienza Tu Viaje",
+      "watchDemo": "Ver Demostración"
+    },
+    "stats": {
+      "studentsGuided": "Estudiantes Guiados",
+      "successRate": "Tasa de Éxito",
+      "careerPaths": "Trayectorias Profesionales"
+    },
+    "floatingCards": {
+      "aiActive": "IA Activa",
+      "careerMatch": "Coincidencia de Carrera",
+      "accuracy": "Precisión"
+    },
+    "modal": {
+      "title": "Demostración de PathFinder AI",
+      "description": "Descubre cómo la IA guía tu trayectoria profesional",
+      "footer": "¿Listo para comenzar tu viaje?",
+      "getStarted": "Comenzar Ahora"
+    },
+    "imageAlt": "Plataforma de Orientación Profesional con IA"
+  },
+  "features": {
+    "badge": "Características Poderosas",
+    "heading": {
+      "line1": "Todo lo que Necesitas para",
+      "line2": "el Éxito Profesional"
+    },
+    "description": "Nuestra plataforma integral combina IA de vanguardia con orientación profesional experta para proporcionar recomendaciones personalizadas en cada etapa de tu viaje.",
+    "main": {
+      "aiAssessment": {
+        "title": "Evaluación Impulsada por IA",
+        "description": "Algoritmos avanzados analizan tus habilidades, intereses y personalidad para proporcionar recomendaciones personalizadas."
+      },
+      "careerMapping": {
+        "title": "Mapeo de Trayectoria Profesional",
+        "description": "Visualiza hojas de ruta claras para diferentes trayectorias profesionales con habilidades y hitos requeridos."
+      },
+      "marketIntelligence": {
+        "title": "Inteligencia de Mercado",
+        "description": "Información en tiempo real sobre tendencias del mercado laboral, expectativas salariales y oportunidades emergentes."
+      },
+      "skillDevelopment": {
+        "title": "Desarrollo de Habilidades",
+        "description": "Rutas de aprendizaje y recursos seleccionados para desarrollar las habilidades que necesitas para tu carrera elegida."
+      }
+    },
+    "categorySection": {
+      "badge": "Adaptado para Cada Estudiante",
+      "heading": {
+        "line1": "Características Especializadas por",
+        "line2": "Categoría de Estudiante"
+      }
+    },
+    "categories": {
+      "class8to10": {
+        "title": "Clase 8-10",
+        "subtitle": "Conciencia y Descubrimiento",
+        "features": {
+          "aptitudeTests": "Pruebas de aptitud y cuestionarios de personalidad",
+          "careerAwareness": "Módulos de conciencia profesional",
+          "skillStarter": "Paquetes iniciales de habilidades",
+          "stressManagement": "Guías de manejo del estrés",
+          "gamifiedLearning": "Desafíos de aprendizaje gamificados"
+        }
+      },
+      "class11to12": {
+        "title": "Clase 11-12",
+        "subtitle": "Toma de Decisiones",
+        "features": {
+          "pathwayExplorer": "Explorador de trayectorias profesionales",
+          "examPrep": "Hoja de ruta de preparación para exámenes competitivos",
+          "alternativeOptions": "Opciones de carrera alternativas",
+          "collegeInsights": "Información sobre universidades y especialidades",
+          "peerInteraction": "Interacción entre compañeros y mentores"
+        }
+      },
+      "post12th": {
+        "title": "Post-12º",
+        "subtitle": "Admisión Universitaria",
+        "features": {
+          "collegeTool": "Herramienta de comparación de universidades",
+          "matchmaker": "Emparejador de carrera vs interés",
+          "roiCalculator": "Calculadora de ROI",
+          "simulator": "Simulador de escenarios",
+          "scholarshipGuides": "Guías de becas y financiación"
+        }
+      },
+      "college": {
+        "title": "Estudiantes Universitarios",
+        "subtitle": "Desarrollo de Habilidades",
+        "features": {
+          "gapAnalyzer": "Analizador de brechas de habilidades",
+          "learningPaths": "Rutas de aprendizaje personalizadas",
+          "trendsDashboard": "Panel de tendencias de la industria",
+          "internships": "Oportunidades de pasantías",
+          "placementKit": "Kit de preparación para colocación"
+        }
+      }
+    }
+  },
+  "categoriesSection": {
+    "badge": "Categorías de Estudiantes",
+    "heading": {
+      "line1": "Diseñado para Cada",
+      "line2": "Etapa de Tu Viaje"
+    },
+    "description": "Cada categoría de estudiante tiene necesidades y desafíos únicos. Nuestra plataforma proporciona características especializadas y orientación adaptada a tu etapa académica actual.",
+    "keyFeatures": "Características Clave:",
+    "getStarted": "Comenzar",
+    "readyToStart": {
+      "title": "¿Listo para Comenzar?",
+      "description": "Únete a miles de estudiantes que han navegado exitosamente su trayectoria profesional con nuestra plataforma."
+    },
+    "stats": {
+      "students": "Estudiantes",
+      "satisfaction": "Satisfacción",
+      "dailyUse": "Uso Diario"
+    },
+    "items": {
+      "earlyStage": {
+        "title": "Clase 8-10",
+        "subtitle": "Etapa Temprana / Fase de Conciencia",
+        "description": "Enfócate en la exposición, el autodescubrimiento y la reducción del estrés académico mientras exploras diversos campos profesionales.",
+        "keyPoints": {
+          "point1": "Descubre tus fortalezas e intereses naturales",
+          "point2": "Aprende sobre diferentes campos profesionales de manera atractiva",
+          "point3": "Desarrolla habilidades fundamentales a través de actividades interactivas",
+          "point4": "Desarrolla hábitos de estudio saludables y manejo del estrés"
+        },
+        "stats": {
+          "students": "2.5M+",
+          "satisfaction": "94%",
+          "timeSpent": "30 min/día"
+        }
+      },
+      "decisionMaking": {
+        "title": "Clase 11-12",
+        "subtitle": "Toma de Decisiones / Exámenes Competitivos",
+        "description": "Navega las decisiones profesionales, prepárate para exámenes competitivos y explora múltiples caminos hacia el éxito.",
+        "keyPoints": {
+          "point1": "Obtén orientación clara sobre trayectorias profesionales y requisitos",
+          "point2": "Estrategias inteligentes para la preparación de exámenes competitivos",
+          "point3": "Explora opciones de carrera alternativas más allá de los caminos tradicionales",
+          "point4": "Conéctate con mentores y estudiantes exitosos"
+        },
+        "stats": {
+          "students": "1.8M+",
+          "satisfaction": "96%",
+          "timeSpent": "45 min/día"
+        }
+      },
+      "collegeAdmission": {
+        "title": "Estudiantes Post-12º",
+        "subtitle": "Etapa de Admisión Universitaria",
+        "description": "Toma decisiones informadas sobre la selección universitaria, elecciones de cursos y evalúa el retorno de inversión.",
+        "keyPoints": {
+          "point1": "Compara universidades según colocaciones, tarifas y oportunidades",
+          "point2": "Combina tus intereses con los cursos y especializaciones correctas",
+          "point3": "Calcula el ROI para diferentes rutas educativas",
+          "point4": "Accede a oportunidades de becas y financiación"
+        },
+        "stats": {
+          "students": "950K+",
+          "satisfaction": "97%",
+          "timeSpent": "60 min/día"
+        }
+      },
+      "skillDevelopment": {
+        "title": "Estudiantes Universitarios",
+        "subtitle": "Desarrollo de Habilidades / Etapa de Empleabilidad",
+        "description": "Cierra la brecha entre el aprendizaje académico y los requisitos de la industria con desarrollo de habilidades dirigido.",
+        "keyPoints": {
+          "point1": "Identifica y llena brechas de habilidades críticas para tus objetivos profesionales",
+          "point2": "Sigue rutas de aprendizaje curadas por IA para habilidades demandadas",
+          "point3": "Mantente actualizado con las últimas tendencias y requisitos de la industria",
+          "point4": "Prepárate para colocación con construcción de currículum y preparación para entrevistas"
+        },
+        "stats": {
+          "students": "1.2M+",
+          "satisfaction": "95%",
+          "timeSpent": "90 min/día"
+        }
+      }
+    }
+  },
+  
+  "calling": {
+    "badge": "Con IA",
+    "availability": "Disponible 24/7",
+    "mainHeading": "Agente de Llamadas",
+    "highlightedText": "CON IA GRATUITO",
+    "description": "Nuestro agente de llamadas con IA está disponible 24/7 para ayudarte con tus consultas y proporcionar orientación experta en tu trayectoria profesional.",
+    "phoneLabel": "Llámanos Ahora",
+    "phoneNumber": "+13205372177",
+    "ctaText": "Obtén asistencia instantánea con tus consultas profesionales y orientación de nuestro agente con IA.",
+    "button": "Llamar Ahora"
+  },
+
+  "footer": {
+    "brand": {
+      "name": "PathfinderAI",
+      "description": "Empoderando a estudiantes indios con orientación profesional impulsada por IA, rutas de aprendizaje personalizadas y desarrollo integral de habilidades para el mercado laboral en evolución.",
+      "contact": {
+        "email": "support@pathfinderai.com",
+        "phone": "+91 80XX-XX-XXXX",
+        "location": "Bangalore, India"
+      }
+    },
+    "sections": {
+      "product": {
+        "title": "Producto",
+        "links": {
+          "features": "Características",
+          "categories": "Categorías",
+          "pricing": "Precios",
+          "roadmap": "Hoja de Ruta"
+        }
+      },
+      "dashboards": {
+        "title": "Paneles",
+        "links": {
+          "class8to10": "Clase 8-10",
+          "class11to12": "Clase 11-12",
+          "post12th": "Post-12º",
+          "collegeStudents": "Estudiantes Universitarios"
+        }
+      },
+      "support": {
+        "title": "Soporte",
+        "links": {
+          "helpCenter": "Centro de Ayuda",
+          "contactUs": "Contáctanos",
+          "faq": "Preguntas Frecuentes",
+          "privacyPolicy": "Política de Privacidad"
+        }
+      },
+      "company": {
+        "title": "Empresa",
+        "links": {
+          "aboutUs": "Sobre Nosotros",
+          "careers": "Carreras",
+          "blog": "Blog",
+          "press": "Prensa"
+        }
+      }
+    },
+    "copyright": "© {{year}} PathfinderAI. Todos los derechos reservados.",
+    "social": {
+      "twitter": "Twitter",
+      "linkedin": "LinkedIn",
+      "instagram": "Instagram"
+    }
+  }
+}
