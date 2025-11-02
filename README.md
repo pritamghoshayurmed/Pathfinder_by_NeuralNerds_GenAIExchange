@@ -242,21 +242,21 @@ npm run dev
 ```bash
 cd career-counsellor_using_livekit_ADK_RAG
 pip install -r requirements.txt
-python adk_agents.py
+python adk_agents.py start
 ```
 
 ### **Behavioral Agent**
 ```bash
 cd behavioralagent_BehaviouralinterviewRound
 pip install -r requirements.txt
-python behavioural_agent.py
+python behavioural_agent.py start
 ```
 
 ### **Technical Agent**
 ```bash
 cd techinalagent_BehaviouralinterviewRound
 pip install -r requirements.txt
-python agent.py
+python agent.py start
 ```
 
 ---
@@ -280,6 +280,7 @@ python agent.py
 
 | Name | Role | Repository | Email |
 |------|------|-----------|-------|
+|Pritam Ghosh|GenAI and Conversational AI Developer|All Repositories(Pathfinder_frontend{skill development dashboard(Placement Kit,interview rounds,Trending skills)}) |gpritam414@gmail.com|
 
 
 ---
