@@ -288,7 +288,7 @@ python agent.py start
 
 
 ```md
-![Contributions for ownerX/repoY](assets/contrib-ownerX-repoY.svg)
+![Contributions for pritamghoshayurmed/pathfinderAi](assets/contrib-ownerX-repoY.svg)
 ```
 
 ---
