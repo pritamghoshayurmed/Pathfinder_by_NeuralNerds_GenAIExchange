@@ -281,6 +281,7 @@ python agent.py start
 | Name | Role | Repository | Email |
 |------|------|-----------|-------|
 |Pritam Ghosh|GenAI and Conversational AI Developer|All Repositories(Pathfinder_frontend{skill development dashboard(Placement Kit,interview rounds,Trending skills)}) |gpritam414@gmail.com|
+|Ankit Rajak|Database Administrator and Full Stack|PathfinderAI(Skill Development & college Admission Dashboard)||
 
 
 ---
